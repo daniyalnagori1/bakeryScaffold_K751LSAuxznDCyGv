@@ -11,8 +11,6 @@ install:
 script: 
  python test.py
 
-after_success:
- - coveralls
 notifications:
   webhooks:
     - http://127.0.0.1:8000/api/v1/challenge/check_builds/
